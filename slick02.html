@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick02_style.css">
+    
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/slick.js"></script>
+
+    <script lang="java">
+        $(function(){
+            $(".move").slick({
+                autoplay:true,
+                autoplaySpeed:1000,
+                
+                // 내가 만든 버튼으로 쓰고 싶을 때 명령어 3가지
+                appendArrows:$(".btn button"),
+                prevArrow : $(".left"),
+                nextArrow : $(".right"),
+            
+            })//slick
+        })//j
+    </script>
+
+
+</head>
+<body>
+    
+    <div class="slide_img">
+        <ul class="move">
+            <li><a href="#"><img src="img/KIA01.JPG" alt="kia"></a></li>
+            <li><a href="#"><img src="img/KIA02.JPG" alt="kia"></a></li>
+            <li><a href="#"><img src="img/KIA03.JPG" alt="kia"></a></li>
+            <li><a href="#"><img src="img/KIA04.JPG" alt="kia"></a></li>
+        </ul>
+
+        <div class="btn">
+            <button class="left">LEFT</button>
+            <button class="right">RIGHT</button>
+        </div>
+        
+    </div> <!-- slide_img -->
+
+</body>
+</html>
